@@ -56,7 +56,7 @@ Desarrollado con un enfoque en la seguridad y la privacidad, frEncryptor permite
 
 ## 📄 Licencia
 
-Este proyecto es una herramienta de código abierto desarrollada por **frWebScan**. Se distribuye bajo los términos de uso ético y educativo.
+Este proyecto es una herramienta de código abierto desarrollada por **fr**.
 
 ---
-Desarrollado con ❤️ por [fr](https://github.com/gitanoxx)
+[fr](https://github.com/gitanoxx)
