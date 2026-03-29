@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0a051a] text-fuchsia-400 font-mono selection:bg-fuchsia-500 selection:text-white;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-[#0a051a];
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-fuchsia-500/20 hover:bg-fuchsia-500/40 transition-colors rounded-full;
+  }
+}
+
+@layer utilities {
+  @keyframes gradient-x {
+    0%, 100% {
+      background-size: 200% 200%;
+      background-position: left center;
+    }
+    50% {
+      background-size: 200% 200%;
+      background-position: right center;
+    }
+  }
+  .animate-gradient-x {
+    animation: gradient-x 15s ease infinite;
+  }
+}
+
+.scanline {
+  width: 100%;
+  height: 100px;
+  z-index: 10;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(217, 70, 239, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.1;
+  position: absolute;
+  bottom: 100%;
+  animation: scanline 6s linear infinite;
+}
+
+@keyframes scanline {
+  0% { bottom: 100%; }
+  100% { bottom: -100px; }
+}
+
+.cyber-card {
+  @apply bg-black/40 backdrop-blur-md border border-fuchsia-500/20 p-6 rounded-2xl relative overflow-hidden;
+}
