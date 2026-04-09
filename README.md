@@ -3,6 +3,7 @@
 **frEncryptor** es una herramienta avanzada de ofuscación y encriptación de código diseñada para proteger la propiedad intelectual de desarrolladores de **JavaScript** y **Python**. 
 
 Desarrollado con un enfoque en la seguridad y la privacidad, frEncryptor permite transformar código legible en versiones protegidas, dificultando la ingeniería inversa sin comprometer la funcionalidad.
+Creado en conjuto a Google AI Studio.
 
 ## ✨ Características
 
